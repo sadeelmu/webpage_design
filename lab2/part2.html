@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Webpage</title>
+
+</head>
+<body>
+    
+    <form action="webpage.html" method="get">
+
+<fieldset>
+    <legend>Personal Information</legend>
+
+    <label for:firstname>First Name </label><input type="text" id="firstname"> 
+    
+     <label for:lastname> Last Name </label><input type="text" id="lastname"> 
+     <br>
+     <br>
+
+    <label for:email>Email </label><input type="email" name="email" id="email"> 
+    <label for:zipcode> Zip Code </label> <input type="number" id=zipcode> 
+<br>
+<br>
+
+    <label for:date>Date of Birth</label>
+    <select>
+        <option disabled selected>Month</option>
+        <option>March</option>
+    </select>
+    <select>
+        <option disabled selected>Day</option>
+        <option>13</option>
+    </select>
+    <select>
+        <option disabled selected>Year</option>
+        <option>2022</option>
+    </select>
+
+</fieldset>
+    <br>
+  <fieldset>
+    <legend>Payment Information</legend>
+
+    <label for:payment>Payment Method: </label>
+        <input type="radio" name="payment" id="paypal"><label for:paypal>Paypal</label>
+        <input type="radio" name="payment" id="visa"><label for:visa>Visa</label>
+        <input type="radio" name="payment" id="mastercard"><label for:mastercard>Mastercard</label>
+  </fieldset>
+  <br>
+    <fieldset>
+        <legend>Shipping Information</legend>
+        <label for:info>Shipping Address:</label>
+        <textarea name="information" placeholder="Please enter your information here." id:info rows="10" cols="17"></textarea>
+        <br>
+        <input type="checkbox" name="primaryaddress" id="primaryaddress"><label for:primaryaddress>As Primary Addresss</label>
+        <br>
+        <br>
+        <br>
+        <label for:datepickup>Date PickUp Requested: </label><input type="date" name="date" id="datepickup">
+
+    </fieldset>
+    <br>
+   
+                <input type="submit" value="Submit">
+
+            
+                <input type="reset" value="Reset">
+
+       
+            </form>
+</body>
+</html>
