@@ -1,0 +1,28 @@
+body {
+  background-color: #f7587d;
+  text-align: justify;
+}
+.sectionone {
+  background-color: #18d2e4;
+}
+
+.sectionone h1 {
+  font-size: 60px;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.sectiontwo {
+  background-color: #000000;
+  color: white;
+  font-size: 30px;
+}
+
+.sectiontwo .special {
+  color: rgb(22, 16, 110);
+}
+
+table {
+  text-align: center;
+  font-size: 30px;
+}
