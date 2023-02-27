@@ -1,61 +1,52 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <style>
-            /*for mobile*/
-            *{
-                box-sizing: border-box;
-            }
-            body{
-                background-color: #031927;
-                color: #E5F4E3;
-                text-align: center;
-                font-size: 20px;
-            }
-            [class*="col-"] {
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*mobile*/
+        * {
+    box-sizing: border-box;
+}
+        [class*="col-"] {
             float: left;
             width: 100%;
-            }
-            .row::after {
+        }
+        .row::after {
             content: "";
             clear: both;
             display: table;
-            }
-
-            #logo{
-                float: left;
-            }
-            #htitle{
-                float: left;
-                font-size: 50px;
-                padding-top: 20px;
-            }
-            .header{
-                overflow: hidden;
-                border-bottom: solid 1px #E5F4E3;
-                padding-bottom: 5px;
-            }
-            .art-img{
-                width: 100%;
-                height: 250px;
-                padding: 20px  20px 20px;
-                float: left;
-            overflow: hidden;
-            }
-            .row{
-                float: left;
-                overflow: hidden;
-            }
-            [class*="article-"]{
+        }
+        [class*="box"] {
             
-                background-color: white;
-                border: 4px solid #031927;
-                padding-bottom: 5px;
-            }
-            /*for desktop*/
-            @media only screen and (min-width: 768px){
+            text-align: center;
+            background-color: white;
+            border: 4px solid #031927;
+            padding-bottom: 10px;
+        }
+        body {
+            background-color: #031927;
+            color: white;
+        }
+        .centered{
+            text-align: center;
+        }
+        #header-title {
+            font-size: 22px;
+            padding-top: 10px;
+        }
+        #logo{
+            width: 50%;
+        }
+
+       
+        .article-img {
+            width: 100%;
+            height: 250px;
+            padding-bottom: 10px;
+            
+        }
+        
+        @media only screen and (min-width: 768px) {
             .col-1{width: 8.33;}
             .col-2 {width: 16.66%;}
             .col-3 {width: 25%;}
@@ -68,43 +59,48 @@
             .col-10 {width: 83.33%;}
             .col-11 {width: 91.66%;}
             .col-12 {width: 100%;}
-            body{
-                background-color: #BA1200;
-            }
-            [class*="article-"]{
-                border: 4px solid #BA1200;
-            }
-            }
-        </style>
-    </head>
-    
-    <body>
-        <div class="header">
-            <div class="col-6">
-                <img src="psut.png" alt="logo" id=logo/>
-            </div>
-            <div class="col-6">
-                <h1 id="htitle">PSUT LATEST NEWS</h1>
-            </div>
-        </div>
-        <div class="col-12">
-            <h2>Latest Articles</h2>
-        </div>
-        <div class="row">
-            <div class="col-4 article-one">
-                <img src="article1.jpg" alt="meeting" class="art-img"/>
-                <a href="">PSUT scores highly on graduate employability scale</a>
-            </div>
-            <div class="col-4 article-two">
-                <img src="article2.jpg" alt="" class="art-img"/>
-                <a href="">PSUT launches 13th global entrepreneurship week</a>
+    body {
+        background-color: #BA1200;
+    }
 
-            </div>
-            <div class="col-4 article-three">
-                <img src="article3.jpg" alt="" class="art-img"/>
-                <a href="">PSUT Huawei sign agreement to create academy</a>
+    [class*="box"] {
+        border: 4px solid #BA1200;
+    }
+    h2{
+        text-align: center;
+    }
+}
+    </style>
+</head>
+<body>
+<div class="row">
+    <div class="col-6 centered" >
+    <img src="psut.png" alt="logo" id="logo" />
+    </div>
+    <div class="col-6" id="header-title">
+    <h1>PSUT Latest News</h1>
+    </div>
+</div>
+<hr>
+<div class="row">
+<div class="col-12">
+<h2>Latest Articles</h2>
+</div>
 
-            </div>
-        </div>
-    </body>
+<div class="articles">
+    <div class=" box-1 col-4">
+        <img src="article1.jpg" alt="article" class="article-img" />
+        <a href="">PSUT scores highly on graduate employability scale</a>
+    </div>
+    <div class="box-2 col-4">
+        <img src="article2.jpg" alt="article" class="article-img" />
+        <a href="">PSUT launches 13th global entrepreneurship week</a>
+    </div>
+    <div class="box-3 col-4">
+        <img src="article3.jpg" alt="article" class="article-img" />
+        <a href="">PSUT Huawei sign agreement to create academy</a>
+    </div>
+</div>
+</div>
+</body>
 </html>
