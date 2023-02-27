@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        
+        var email = window.prompt("Please enter a valid email address");
+        function validate(email){
+            var emailSign = email.search("@");
+            var emailDomain = email.search("psut.edu.jo");
+            var emailId = email.slice(0,emailSign);
+
+            if(emailSign ==-1 || emailDomain ==-1 || emailId.length > 11){
+                document.write("Invalid email address");
+            }
+            else
+            document.write("Valid email address");
+        }
+        validate(email);
+
+
+    </script>
+    <body>
+        
+    </body>
+</html>
