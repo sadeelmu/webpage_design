@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Webpage</title>
+
+</head>
+<body>
+    
+    <form action="webpage.html" method="get"> </form>
+    <table border="1"> 
+        <tr>
+            <td><label for:firstname>First Name </label><input type="text" id="firstname"></td>
+            <td><label for:lastname>Last Name </label><input type="text" id="lastname"></td>
+        </tr>
+        <tr>
+            <td><label for:email>Email </label><input type="email" name="email" id="email"></td>
+            <td><label for:zipcode>Zip Code </label> <input type="number" id:zipcode></td>
+        </tr>
+        <tr>
+            <td><label for:date>Date of Birth</label><input type="date" name="date" id="date"></td>
+        </tr>
+    </table>
+    <br>
+
+    <table border="1">
+        <tr>
+            <td><label for:payment>Payment Method: </label>
+                <input type="radio" name="payment" id="paypal"><label for:paypal>Paypal</label>
+                <input type="radio" name="payment" id="visa"><label for:visa>Visa</label>
+                <input type="radio" name="payment" id="mastercard"><label for:mastercard>Mastercard</label>
+
+
+            </td>
+        </tr>
+
+    </table>
+    <br>
+    <table border="1">
+        <tr>
+            <td>
+                <label for:info>Shipping Adress:</label>
+
+            <textarea name="information" placeholder="Please enter your information here." id:info rows="10" cols="17"></textarea>
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="primaryaddress" id="primaryaddress"><label for:primaryaddress>As Primary Adresss</label>
+            </td>
+        </tr>
+        
+        <tr>
+            
+            <td><label for:datepickup>Date PickUp Requested: </label><input type="date" name="date" id="datepickup"></td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <td>
+                <input type="submit" value="Submit">
+
+            </td>
+            <td>
+                <input type="reset" value="Reset">
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
