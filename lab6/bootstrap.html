@@ -1,46 +1,97 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link href = "e2.css" rel="stylesheet"/>
-  </head>
-  <body>
-    <div class="container-fluid">
-    <div class="row header">
-      <!--col-sm-12 is for mobile-->
-      <!--col-md-6 is for tablet-->
-      <!--col-lg-4 is for desktop-->
-      <div class="col-sm-12 col-lg-6">
-        <img src="psut.png" alt="psut logo">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+            background-color: #031927;
+        }
 
-      </div>
-      <div class="col-sm-12 col-lg-6" id="header-title">
-        <h1>PSUT LATEST NEWS</h1>
-      </div>
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            width: 100%;
+            float: left;
+        }
+        #header-title {
+            font-size: 20px;
+            padding-top: 45px;
+            float: left;
+        }
+
+        .header {
+            padding-bottom: 5px;
+            border-bottom: 1px solid white;
+            overflow: hidden;
+        }
+        [class*="box"] {
+            background-color: #E5F4E3;
+            border: 3px solid #031927;
+            padding-bottom: 16px;
+            float: left;
+            overflow: hidden;
+        }
+
+        .img {
+            width: 100%;
+            height: 250px;
+        }
+
+        #logo {
+            text-align: center;
+        }
+       
+        #logo-img{
+            width: 50%;
+        }
+        @media only screen and (min-width: 768px) {
+            * {
+                background-color: #BA1200;
+            }
+
+            [class*="box"] {
+                border: 4px solid #BA1200;
+            }
+            h2{
+                text-align: center;
+            }
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-fluid">
+    <div class=" rows text-white header">
+        <div class="col-md-6" id="logo">
+        <img src="psut.png" alt="logo" id="logo-img"/>
+        </div>
+        <div class="col-md-6" id="header-title">
+        <h1>PSUT Latest News</h1>
+        </div>
     </div>
-    <div class="row">
-      <h2>Latest Article</h2>
-      <div class="col-sm-12 col-lg-4 bg-white" class="box">
-        <img src="article1.jpg" alt="psut entrance" class="aimage">
-        <a href="https://psut.edu.jo/">PSUT scores highly on graduate employability scale</a>
-
-      </div>
-      <div class="col-sm-12 col-lg-4 bg-white" class="box">
-        <img src="article2.jpg" alt="meeting" class="aimage">
-        <a href="https://psut.edu.jo/" >PSUT launches 13th Global Entrepenurship Week</a>
-
-
-      </div>  
-      <div class="col-sm-12 col-lg-4 bg-white" class="box">
-        <img src="article3.jpg" alt="agreement" class="aimage">
-        <a href="https://psut.edu.jo/">PSUT Huawei sign agreement to create academy</a>
-
-
-      </div>
+    <div class="col-md-12 rows text-white">
+    <h2>Latest Articles</h2>
     </div>
-  </div>
-  </body>
+    <div class="articles rows text-primary">
+        <div class="box-1 col-md-4 bg-white">
+            <img src="article1.jpg" alt="article" class="img" />
+            <p class="bg-white">PSUT scores highly on graduate employability scale</p>
+        </div>
+        <div class="box-2 col-md-4 bg-white">
+            <img src="article2.jpg" alt="article" class="img" />
+            <p class="bg-white">PSUT launches 13th global entrepreneurship Week</p>
+        </div>
+        <div class="box-3 col-md-4 bg-white">
+            <img src="article3.jpg" alt="article" class="img" />
+            <p class="bg-white">PSUT Huawei sign agreement to create academy</p>
+        </div>
+    </div>
+</div>
+</body>
 </html>
