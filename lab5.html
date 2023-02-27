@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        body{
+            margin: 20px 20px 20px 20px;
+            color: white;
+        }
+        img{
+            width: 30%;
+            display: block;
+            padding: 5px;
+            margin: 5px auto 5px;
+            border: 3px black solid;
+            border-radius: 20px;
+        }
+        img:hover{
+            transform: rotate(360deg);
+            transition: transform 2s;
+            border-color: blue;
+        }
+    
+        .sectionone{
+            float: left;
+            font-size: 20px;
+            padding: 30px;
+            width: 46%;
+            height: 720px;
+            background-image: linear-gradient(#00d4ff,#090979,#020024);
+
+        }
+        .sectiontwo{
+            float: right;
+            width: 46%;
+            font-size: 20px;
+            padding: 30px;
+            height: 720px;
+            background-image: radial-gradient(#22c1c3,#fdbb2d);
+        }
+        .sectiontwo h1{
+            font-size: 70px;
+            color: white;
+            text-shadow: 7px 14px 7px black;
+        }
+        .sectiontwo h1:hover{
+            opacity: 0.5;
+        }
+        p{
+            text-align: justify;
+            color: white;
+        }
+        ul li:hover{
+            font-size: 30px;
+            text-decoration: underline;
+            transform: skew(-15deg);
+        }
+        fieldset{
+            border-color: black;
+            border-radius: 20px;
+            padding: 20px 20px 20px 20px;
+        }
+        input{
+            margin: 10px;
+            padding: 5px 5px 5px 5px;
+            font-size: 20px;
+        }
+        input:focus{
+            width: 100%;
+        }
+        #ps1:hover{
+         background-image: radial-gradient(#22c1c3,#fdbb2d);
+         transition: transform 2s;
+         transform: scale(1.3);
+        }
+        #ps2:hover{
+            background-image: linear-gradient(#00d4ff,#090979,#020024);
+            transition: transform 2s;
+            transform: scale(1.3);
+        }
+        </style>
+    </head>
+    <header>
+
+    </header>
+    <body>
+        <div class="sectionone">
+            <img src="html5.png" alt="html logo">
+            <p id="ps1">HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and last[3] major HTML version that is a World Wide Web Consortium (W3C) recommendation. The current specification is known as the HTML Living Standard. It is maintained by the Web Hypertext Application Technology Working Group (WHATWG), a consortium of the major browser vendors (Apple, Google, Mozilla, and Microsoft).
+            </p>
+            <br>
+            <p>Below is an example of a list, everytime I hover my mouse over the list:</p>
+            <ul>
+                <li>Font size changes</li>
+                <li>Text is now underlined</li>
+                <li>Text is SKEWED by -15 degrees</li>
+                <li>The css code that you should write, must work on any UL added into the HTML code without any class</li>
+            </ul>
+        </div>
+        <div class="sectiontwo">
+            <h1>HTML 5 + CSS</h1>
+            <p id="ps2">CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.
+            </p>
+            <br>
+            <fieldset>
+                <input type="text" id="username" placeholder="Username">
+                <br>
+                <input type="password" name="password" id="password" placeholder="Password">
+                <br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </div>
+    </body>
+</html>
