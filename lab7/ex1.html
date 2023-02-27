@@ -1,0 +1,31 @@
+var num = window.prompt("Please enter a number from 1 to 99");
+var choice = window.prompt("Do you want to print the value in the log console or the document? Write c for console and d for document");
+
+if(num > 0 && num < 100){
+    if(num % 2 ==0){
+        var str = "Number is divisable by 2 ";
+
+        if(choice == 'c'){
+            console.log(str);
+        }
+        else if (choice == 'd'){
+
+            document.write(str);
+        }
+    }
+    else{
+        var noStr = "Number is not divisable by 2 ";
+        if(choice == 'c'){
+            console.log(noStr);
+        }
+        else if (choice == 'd'){
+
+            document.write(noStr);
+        }
+
+    }
+    
+}
+else { 
+    window.alert("Number is not between 1 and 99");
+}
